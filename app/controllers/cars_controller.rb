@@ -34,6 +34,7 @@ class CarsController < ApplicationController
         format.html { redirect_to @car, notice: 'Car was successfully created.' }
         format.json { render :show, status: :created, location: @car }
       else
+        puts @car.errors.full_messages
         format.html { render :new }
         format.json { render json: @car.errors, status: :unprocessable_entity }
       end
