@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment1</title>
+    <title>Invader's Car Shop</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class=""main>
+      <%= image_tag 'Alien.jpeg', alt: 'Invader\'s Car Shop' %>
+      <h1><%= @page_title %></h1>
+    </header>
+    <section class="content">
+      <nav class="side_nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cars">Cars</a></li>
+          <li><a href="/parts">Parts</a></li>
+          <li><a href="/makes">Makes</a></li>
+        </ul>
+      </nav>
+      <main class='<%= controller.controller_name %>'>
+        <%= yield %>
+      </main>
+    </section>
   </body>
 </html>
