@@ -18,16 +18,21 @@
 body {
   margin: 0;
   padding: 0;
+  background: beige;
 }
-header.main {
+header {
   text-align: center; // for mobile divices
   @media (min-width: 30em) {
     text-align: left; // for desktops/laptops
   }
-  background: blue;
+  background: darkred;
   margin: 0;
   h1 {
-    display: none;
+    text-align: left;
+    background: darkred;
+  }
+  img {
+    resize: both;
   }
 }
 
