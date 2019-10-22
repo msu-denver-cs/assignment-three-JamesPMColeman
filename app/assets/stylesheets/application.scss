@@ -23,13 +23,17 @@ body {
 header {
   text-align: center; // for mobile divices
   @media (min-width: 30em) {
-    text-align: left; // for desktops/laptops
+    text-align: right; // for desktops/laptops
+    font-size: 1.25em;
+    color: firebrick;
+    padding-right: .5em;
   }
-  background: darkred;
+  background: firebrick;
   margin: 0;
+
   h1 {
     text-align: left;
-    background: darkred;
+    background: firebrick;
     font-size: 1.5em;
     color: gainsboro;
   }

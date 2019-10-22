@@ -10,10 +10,14 @@
 
   <body>
     <header class=""main>
+      <%= "_________" %>
       <h1>
         <%= image_tag 'AlienTwo.png', alt: 'Invader\'s Car Shop' %>
         <%= "Invader\'s Car Shop" %>
+
       </h1>
+      <%= link_to 'Log out', destroy_user_session_path,
+                  method: :delete %>
     </header>
     <section class="content">
       <nav class="side_nav">
@@ -22,6 +26,7 @@
           <li><a href="/cars">Cars</a></li>
           <li><a href="/parts">Parts</a></li>
           <li><a href="/makes">Makes</a></li>
+          <br><br>
         </ul>
       </nav>
       <main class='<%= controller.controller_name %>'>
