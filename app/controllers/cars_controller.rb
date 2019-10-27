@@ -68,6 +68,8 @@ class CarsController < ApplicationController
 
   def search
     @cars = Car.where("model like ?", "%#{params[:query]}%")
+    @cars = Car.where("make like ?",  "%#{params[:query]}%")
+    @cars = Car.where("year like ?",  "%#{params[:query]}%")
     render :index
   end
 

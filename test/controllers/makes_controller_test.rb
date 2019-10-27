@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class MakesControllerTest < ActionDispatch::IntegrationTest
+
+  # Needs a to sign in to run tests successfully
+
   setup do
     @make = makes(:one)
   end

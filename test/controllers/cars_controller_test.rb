@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class CarsControllerTest < ActionDispatch::IntegrationTest
+
+  # Needs a to sign in to run tests successfully
+
   setup do
     @car = cars(:one)
     @VIN = rand(999999)

@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class PartsControllerTest < ActionDispatch::IntegrationTest
+
+  # Needs a to sign in to run tests successfully
+
   setup do
     @part = parts(:one)
   end
